@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased font-sans;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+}
+
+.geometric-pattern {
+  background-image: url('https://www.transparenttextures.com/patterns/arabesque.png'),
+    linear-gradient(to right, rgba(236, 253, 245, 0.4), rgba(209, 250, 229, 0.4));
+  background-blend-mode: overlay;
+}
+
+.calligraphy-overlay {
+  background-image: url('https://images.unsplash.com/photo-1584286595398-a59511e3c1c3?auto=format&fit=crop&q=80'),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.islamic-pattern {
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-eyes.png');
+  background-repeat: repeat;
+  opacity: 0.1;
+}
